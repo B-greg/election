@@ -1,12 +1,4 @@
-export interface QuestionType {
-  id: number;
-  question: string;
-  image: string;
-  positiveLabel: string;
-  positiveLink: string | number;
-  negativeLabel: string;
-  negativeLink: string | number;
-}
+import { QuestionType } from "../types";
 
 const questions: QuestionType[] = [
   {
