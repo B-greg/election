@@ -1,0 +1,10 @@
+.card {
+  margin: 16px auto 16px auto;
+}
+.questionTitle {
+  margin-bottom: 16px;
+  margin-top: 0px;
+}
+.button {
+  min-width: 120px;
+}

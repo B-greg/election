@@ -4,6 +4,7 @@ import Head from "next/head";
 import {
   Box,
   Button,
+  Image,
   Heading,
   Grommet,
   BoxExtendedProps,
@@ -19,10 +20,11 @@ import {
   CardFooter,
   CardHeader,
 } from "grommet";
-import { FormClose, Notification } from "grommet-icons";
-import styles from "../styles/Home.module.css";
+import { FormClose, Notification, Slack } from "grommet-icons";
+import styles from "./QuestionCard.module.css";
 import theme from "../configs/theme";
 import { QuestionType } from "../types";
+import { useTranslation } from "next-i18next";
 
 export interface QuestionCardProps {
   question: QuestionType;
@@ -32,20 +34,46 @@ export interface QuestionCardProps {
 
 const QuestionCard: FC<QuestionCardProps> = (props) => {
   const { question, onPositiveClick, onNegativeClick } = props;
+  const { t } = useTranslation("question");
+
   return (
-    <Card height="large" width="large" background="light-1">
-      <CardHeader pad="medium">{question.question}</CardHeader>
-      <CardBody pad="medium">Body</CardBody>
-      <CardFooter pad={{ horizontal: "large" }} background="light-2">
-        <Button
-          primary
-          label={question.positiveLabel}
-          onClick={() => onPositiveClick(question.positiveLink)}
-        />
-        <Button
-          label={question.negativeLabel}
-          onClick={() => onNegativeClick(question.negativeLink)}
-        />
+    <Card
+      height="large"
+      width="large"
+      background="light-1"
+      className={styles.card}
+    >
+      <CardHeader pad="medium">{t("question") + question.id}</CardHeader>
+      <CardBody pad="medium" align="center">
+        <Heading level="3" className={styles.questionTitle}>
+          {t(question.question)}
+        </Heading>
+        <Box height="100%" width="100%">
+          <Image src={question.image} alt={question.image} fit="contain" />
+        </Box>
+      </CardBody>
+      <CardFooter
+        pad={{ horizontal: "large", vertical: "medium" }}
+        background="light-2"
+        align="end"
+        direction="column"
+      >
+        <Box direction="row" gap="small">
+          <Button
+            primary
+            color="status-error"
+            className={styles.button}
+            label={t(question.negativeLabel)}
+            onClick={() => onNegativeClick(question.negativeLink)}
+          />
+          <Button
+            primary
+            color="status-ok"
+            className={styles.button}
+            label={t(question.positiveLabel)}
+            onClick={() => onPositiveClick(question.positiveLink)}
+          />
+        </Box>
       </CardFooter>
     </Card>
   );

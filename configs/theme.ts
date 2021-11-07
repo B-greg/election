@@ -5,6 +5,9 @@ const theme = {
       size: '18px',
       height: '20px',
     },
+    colors: {
+      brand: '#374bf5'
+    }
   },
 };
 

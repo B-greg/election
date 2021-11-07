@@ -9,13 +9,19 @@ import { useRouter } from "next/router";
 import { GetStaticProps, GetStaticPaths, GetServerSideProps } from "next";
 import { QuestionType } from "../types";
 import axios from "axios";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { languageConfig } from "../configs";
 
-export const getServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
   // Fake API Call, this can't call inner API
   const question = questionsJson.find((q) => q.id === 1);
 
   return {
     props: {
+      ...(await serverSideTranslations(
+        context.locale ?? languageConfig.defaultLocale,
+        ["common", "question"]
+      )),
       question,
     },
   };

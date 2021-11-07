@@ -1,0 +1,16 @@
+{
+  "question": "Question: ",
+  "question_1": "Pour vous deux hommes, c'est?",
+  "question_2": "Pour vous les femmes, c'est?",
+  "question_3": "Pour vous la misere et la pauvretee, c'est?",
+  "question_4": "Pour vous la nature, c'est?",
+  "question_5": "Pour vous les personnes avec une concentration de mélanine plus élevées, c'est?",
+  "question_6": "Exercez-vous ou avez exercer en temps que fonctionaire d'etat, une profession dans l'education ou le social?",
+  "question_7": "Ete vous un ouvrier?",
+  "button": {
+    "ok": "Ok",
+    "not_ok": "Pas Ok",
+    "oui": "Oui",
+    "non": "Non"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "spellright.language": [
+    "French"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext",
+    "typescriptreact",
+    "json"
+  ],
+  "cSpell.words": [
+    "xxsmall"
+  ]
+}
