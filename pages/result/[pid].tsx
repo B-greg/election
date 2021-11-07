@@ -16,7 +16,7 @@ import { results as resultsJson } from "../../configs";
 import { ParsedUrlQuery } from "querystring";
 import { Results, ResultType } from "../../types";
 import question from "../question";
-import styles from "./Result.module.css";
+import styles from "../../styles/Result.module.css";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { languageConfig } from "../../configs";
@@ -33,7 +33,7 @@ export interface ResultParams extends ParsedUrlQuery {
 export const getStaticProps: GetStaticProps<ResultProps, ResultParams> = async (
   context
 ) => {
-  const { locale, params } = context;
+  const { locale = null, params = null } = context;
   const pid = params?.pid;
   const pidResult = pid as keyof Results;
   return {
