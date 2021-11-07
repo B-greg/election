@@ -19,7 +19,8 @@ import question from "../question";
 import styles from "../../styles/Result.module.css";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import { languageConfig } from "../../configs";
+import i18nextConfig from "../../next-i18next.config";
+
 import Link from "next/link";
 
 export interface ResultProps {
@@ -38,10 +39,11 @@ export const getStaticProps: GetStaticProps<ResultProps, ResultParams> = async (
   const pidResult = pid as keyof Results;
   return {
     props: {
-      ...(await serverSideTranslations(locale ?? languageConfig.defaultLocale, [
-        "common",
-        "result",
-      ])),
+      ...(await serverSideTranslations(
+        locale ?? i18nextConfig.i18n.defaultLocale,
+        ["common", "result"],
+        i18nextConfig
+      )),
       result: resultsJson[pidResult],
     },
   };
