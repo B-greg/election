@@ -62,7 +62,16 @@ const questions: QuestionType[] = [
     positiveLabel: "button.oui",
     positiveLink: "/result/lo",
     negativeLabel: "button.non",
-    negativeLink: "/result/npa",
+    negativeLink: 8,
+  },
+  {
+    id: 8,
+    image: "/imgs/debate.jpg",
+    question: "question_8",
+    positiveLabel: "button.oui",
+    positiveLink: "/result/npa",
+    negativeLabel: "button.non",
+    negativeLink: "/result/rp",
   },
 ];
 

@@ -21,6 +21,11 @@ const results: Results = {
     image: "/imgs/goulag.jpg",
     title: "result.4.title",
   },
+  rp: {
+    content: "result.5.content",
+    image: "/imgs/anasse.webp",
+    title: "result.5.title",
+  },
 };
 
 export default results;

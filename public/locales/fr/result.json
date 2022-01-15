@@ -1,23 +1,27 @@
 {
-  "title": "Notre intelligence artificielle de derrière generation a finenement anayser vous reponses et suggere le resultat suivant pour vous.",
+  "title": "Notre intelligence artificielle de derrière génération a finement analyser vos réponses et suggère le résultat suivant pour vous.",
   "result": {
     "1": {
-      "title": "Nouveaux Parti Anticapitalite",
-      "content": "Sans surprise, comme a chaques elections, vous alez voter pour le NPA. Pas vraiment besoin de faire ce test car de toutes facon c'est le seul parti pour le quel vous voter."
+      "title": "Nouveaux Parti Anticapitaliste",
+      "content": "Sans surprise, comme a chaque élections, vous allez voter pour le NPA. Pas vraiment besoin de faire ce test car de toutes façon c'est le seul parti pour le quel vous voter."
     },
     "2": {
-      "title": "Parti Communiste Francais",
-      "content": "Vous ne serez pas depayise, ya que des retraiter et des profs dans ce parti. Enfin, surtout des profs a la retraite. Mais si jammais vous croisez ce revisioniste de Rouselle, jettez lui des cailloux de ma part."
+      "title": "Parti Communiste Français",
+      "content": "Vous ne serez pas dépayse, il y a que des retraités et des profs dans ce parti. Enfin, surtout des profs a la retraite. Mais si jamais vous croisez ce révisionniste de Rouselle, jetez lui des cailloux de ma part."
     },
     "3": {
-      "title": "Lutte Ouvriere",
-      "content": "Comme tous les ouvriers, vous etent pour la Lutte Ovriere. On vous soutien aussi camarades. Mais franchement, refaites vous affices, les meme jaunes et moche depuis 50 ans c'est plus possible."
+      "title": "Lutte Ouvrière",
+      "content": "Comme tous les ouvriers, vous êtes a la Lutte Ouvrière. On vous soutien aussi camarades. Mais franchement, refaites vos affiches. Utiliser les même jaunes et moche depuis 50 ans c'est plus possible."
     },
     "4": {
-      "title": "Centre de reeducation et de rehabilitation",
-      "content": "L'exercices physique en plain air, l'instruction culturel et philosiphique ferons de vous un Homme nouveaux (Un Camarade). Nous alons vous eduquer sainement et forger votre corp et espris. Cella vous fera du bien vous verez."
+      "title": "Centre de rééducation et de réhabilitation",
+      "content": "L’exercice physique en plain air, l'instruction culturel et philosophique ferons de vous un Homme nouveaux. Nous allons vous éduquer sainement et forger votre corps et esprit. De plus, pour réussir la transition écologique, nous avons besoin de construire écologiquement de nouvelle routes ferroviaire. Vous allez donc aider a cet ambitieux projet"
+    },
+    "5": {
+      "title": "Anasse Kazib",
+      "content": "Sérieux, c'est 3 sièges dans une ville pourris, c'est pas la fin du monde. Grandissez un peut, ou allez a la LO. Mais même eux ne veulent pas de vous."
     }
   },
   "restart_description": "Voulez-vous recommencer le test?",
-  "restart": "Recomencer"
+  "restart": "Recommencer"
 }
